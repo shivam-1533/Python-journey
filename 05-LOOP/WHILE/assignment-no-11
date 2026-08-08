@@ -1,0 +1,18 @@
+#  to find first and last digit of a num
+
+num = int(input("Enter a number: "))
+
+# Make the number positive if negative
+if num < 0:
+    num = -num
+
+last_digit = num % 10
+
+temp = num
+while temp >= 10:
+    temp = temp // 10
+
+first_digit = temp
+
+print("First digit:", first_digit)
+print("Last digit:", last_digit)

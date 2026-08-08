@@ -1,7 +1,10 @@
-#   Write a program to get out of the sakura area
+# Calculate the area of a square.
 
-side = float(input("Enter side lenght of aquare: "))
+# Take the side length as input from the user.
+side = float(input("Enter the side length of the square: "))
 
-area = side ** 2
+# Calculate the area of the square.
+area = side**2
 
-print(f"Area of Square is {area}")
+# Display the calculated area.
+print(f"Area of the square is {area}")

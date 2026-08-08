@@ -1,12 +1,13 @@
-# Find the sum of all natural numbers between 1 to n
+# Find the sum of all natural numbers between 1 and n
 
 n = int(input("Enter a number: "))
 
 i = 1
-sum = 0
+total = 0
 
+# Add each natural number from 1 to n.
 while i <= n:
-    sum = sum + i
-    i = i + 1
+    total += i
+    i += 1
 
-print("Sum =", sum)
+print("Sum =", total)

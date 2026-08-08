@@ -1,12 +1,16 @@
-# Digit Reverser
+# Reverse the digits of a number.
 
-num = int(input("Enter The Number You Want To Reverse : ")) # to take user input for reverse a number 
+# Take a number as input from the user.
+num = int(input("Enter the number you want to reverse: "))
 
-reverse = 0 
+# Initialize the reversed number.
+reverse = 0
 
+# Extract and reverse each digit.
 while num > 0:
-    digit = num % 10 
+    digit = num % 10
     reverse = reverse * 10 + digit
     num //= 10
 
-print(reverse)
+# Display the reversed number.
+print(f"Reversed number: {reverse}")

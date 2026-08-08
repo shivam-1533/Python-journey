@@ -1,9 +1,15 @@
-result = input("Enter Result (P/F): ").upper()
+# Display a message based on the student's result.
 
+# Take the result as input and convert it to uppercase.
+result = input("Enter result (P/F): ").upper()
+
+# Display the appropriate message based on the result.
 match result:
     case "P":
-        print("Congratulations! You Passed.")
+        print("Congratulations! You passed.")
+
     case "F":
-        print("Better Luck Next Time.")
+        print("Better luck next time.")
+
     case _:
-        print("Invalid Input")
+        print("Invalid input.")

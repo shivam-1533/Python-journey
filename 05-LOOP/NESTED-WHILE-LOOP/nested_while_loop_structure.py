@@ -1,21 +1,24 @@
+# Convert minutes into seconds using nested while loops.
 
-num = int(input("\nEnter Your Minut To Convert Into Second :- "))
+# Take the number of minutes as input.
+num = int(input("\nEnter the number of minutes: "))
 
-big = 1
+# Start counting minutes from 1.
+minute = 1
 
-while big <= num :
-    small = 1
+# Process each minute until the given limit.
+while minute <= num:
+    second = 1
 
-    while small <= 60:
-        print(f"Minut {big} | Second {small}")
+    # Display each second within the current minute.
+    while second <= 60:
+        print(f"Minute {minute} | Second {second}")
+        second += 1
 
-        small += 1
+    # Display the appropriate message after each minute.
+    if minute < num:
+        print("\nStarting the next minute...\n")
+    else:
+        print("\nProgram ended.\n")
 
-
-    if big < num :
-        print("\nNext Minut Start\n")
-
-    else :
-        print("\nProgram Is End\n")
-        
-    big += 1
+    minute += 1

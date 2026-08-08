@@ -1,8 +1,11 @@
-# Wrote a program to calculate the area of ​​a rectangle.
+# Calculate the area of a rectangle.
 
-length = float(input("Enter length: "))
-width = float(input("Enter width: "))
+# Take the length and width as input from the user.
+length = float(input("Enter the length: "))
+width = float(input("Enter the width: "))
 
+# Calculate the area of the rectangle.
 area = length * width
 
-print(f"Area of your rectangle is {area}")
+# Display the calculated area.
+print(f"Area of the rectangle is {area}")

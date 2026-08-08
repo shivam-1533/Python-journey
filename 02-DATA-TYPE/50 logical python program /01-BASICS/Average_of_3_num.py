@@ -1,9 +1,12 @@
-#  Write a program to calculate the average of 3 numbers.
+# Calculate the average of three numbers.
 
-num_1 = float(input("Enter First Num: "))
-num_2 = float(input("Enter Second Num: "))
-num_3 = float(input("Enter Third Num: "))
+# Take three numbers as input from the user.
+num_1 = float(input("Enter the first number: "))
+num_2 = float(input("Enter the second number: "))
+num_3 = float(input("Enter the third number: "))
 
-ave = (num_1 + num_2 + num_3) / 3
+# Calculate the average of the three numbers.
+average = (num_1 + num_2 + num_3) / 3
 
-print(f"Average of {num_1} {num_2} and {num_3} is {ave}")
+# Display the calculated average.
+print(f"Average of {num_1}, {num_2}, and {num_3} is {average}")

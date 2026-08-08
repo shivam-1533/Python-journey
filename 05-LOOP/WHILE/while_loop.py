@@ -1,21 +1,8 @@
+# Print numbers from the given range in reverse order
 
-# x = 1
-# while x <= 10:
-#     print(x,"hello world")
+num = int(input("Enter your range: "))
 
-#     x += 1
-
-
-
-
-
-
-
-range = int(input("Enter your range : "))
-
-
-while range >= 1:
-
-    print(range)
-
-    range -= 1
+# Print numbers from the given range down to 1.
+while num >= 1:
+    print(num)
+    num -= 1

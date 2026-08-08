@@ -1,9 +1,12 @@
-#  Write a program to calculate simple interest.
+# Calculate simple interest.
 
-P = float(input("Enter Principal Ammount: "))
-R = float(input("Enter Rate of Interest: "))
-T = float(input("Enter Time: "))
+# Take the principal amount, rate of interest, and time as input.
+principal = float(input("Enter the principal amount: "))
+rate = float(input("Enter the rate of interest: "))
+time = float(input("Enter the time: "))
 
-Interest = (P * R * T) / 100
+# Calculate the simple interest.
+simple_interest = (principal * rate * time) / 100
 
-print(f"Your simple interest is {Interest}")
+# Display the calculated simple interest.
+print(f"Your simple interest is: ₹{simple_interest:.2f}")

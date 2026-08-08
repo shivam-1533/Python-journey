@@ -1,13 +1,16 @@
-#  take a gusing number from user 
+# Create a number guessing game.
 
-secret = 9
+# Set the secret number.
+secret_number = 9
 
+# Keep asking the user to guess until the correct number is entered.
 while True:
+    guess = int(input("Enter a number: "))
 
-    guess = int(input("Enter a num : "))
+    # Check whether the guessed number is correct.
+    if guess == secret_number:
+        print("\n==== You Won! ====\n")
+        break
 
-    if guess == secret:
-        print("\n==== You Won ====\n")
-        exit()
     else:
-        print("\n==== Try Again ====\n")
+        print("\n==== Try Again! ====\n")

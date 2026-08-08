@@ -1,40 +1,20 @@
-# Upper Case
-# The upper() method returns the string in upper case:
+# Demonstrate commonly used string methods.
 
-a = "Hello, World!"
-print(a.upper())
+text = "Hello, World!"
 
+# Convert the string to uppercase.
+print(text.upper())
 
-# Lower Case
-# Example
-# The lower() method returns the string in lower case:
+# Convert the string to lowercase.
+print(text.lower())
 
-a = "Hello, World!"
-print(a.lower())
+# Remove whitespace from the beginning and end.
+text = " Hello, World! "
+print(text.strip())
 
+# Replace one character with another.
+text = "Hello, World!"
+print(text.replace("H", "J"))
 
-# Remove Whitespace
-# Whitespace is the space before and/or after the actual text, and very often you want to remove this space.
-
-a = " Hello, World! "
-print(a.strip()) # returns "Hello, World!"
-
-
-
-
-# Replace String
-# Example
-# The replace() method replaces a string with another string:
-
-a = "Hello, World!"
-print(a.replace("H", "j"))
-
-
-
-# Split String
-# The split() method returns a list where the text between the specified separator becomes the list items.
-# Example
-# The split() method splits the string into substrings if it finds instances of the separator:
-
-a = "Hello, World!"
-print(a.split(",")) # returns ['Hello', ' World!']
+# Split the string into a list using a separator.
+print(text.split(","))

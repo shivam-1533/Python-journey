@@ -1,34 +1,33 @@
-#  WAP TO DISPLAY WEEKDAY FROM NUMBER 
-#  INPUT A NUMBER (1 TO 7) AND DISPLAY THE CORRESPONDING WEEKDAY. 
+# Display the weekday based on a number from 1 to 7.
 
+# Take the user's name and day number as input.
+name = input("Enter your name: ")
+day = int(input("Enter the day number (1-7): "))
 
-name = input("ENTER YOUR NAME:  ")
+# Check whether the entered day number is valid.
+if day < 1 or day > 7:
+    print("Invalid input! Please enter a number between 1 and 7.")
 
-day = int(input("ENTER THE DAY NUMBER BETWEEN 1 AND 7:  "))
+elif day == 1:
+    print(f"{day} is Monday. Today is a working day for you. 👨‍💻")
 
-if day > 7 :
-    print("THIS IS THE WRONG INPUT YOUR CRITERIA IS 1 TO 7 THANK YOU🥰")
+elif day == 2:
+    print(f"{day} is Tuesday. Today is a working day for you. 👨‍💻")
 
-elif day == 1 :
-    print(day,'IS "MONDAY" TODAY IS WORKING DAY FOR YUHH👨‍💻')
+elif day == 3:
+    print(f"{day} is Wednesday. Today is a working day for you. 👨‍💻")
 
-    
-elif day == 2 :
-    print(day,'IS "TUESDAY" TODAY IS WORKING DAY FOR YUHH👨‍💻')
+elif day == 4:
+    print(f"{day} is Thursday. Today is a working day for you. 👨‍💻")
 
-elif day == 3 :
-    print(day,'IS "WEDNESDAY" TODAY IS WORKING DAY FOR YUHH👨‍💻')
+elif day == 5:
+    print(f"{day} is Friday. Today is a working day for you. 👨‍💻")
 
-elif day == 4 :
-    print(day,'IS "THURSDAY" TODAY IS WORKING DAY FOR YUHH👨‍💻')
+elif day == 6:
+    print(f"{day} is Saturday. It's the weekend. Enjoy! 🎉")
 
-elif day == 5 :
-    print(day,'IS "FRIDAY" TODAY IS WORKING DAY FOR YUHH👨‍💻')
+elif day == 7:
+    print(f"{day} is Sunday. It's your day off. 🧘")
 
-elif day == 6 :
-    print(day,'IS "SATURDAY" TODAY IS WEEKEND DAY FOR YUHH ENJOY 🍾')
-
-elif day == 7 :
-    print(day,'IS "SUNDAY" TODAY IS WEEKOFF FOR YOUHH 🧘')
-
-print(name,"THANK YOU FOR VISITING 🙏")
+# Display a thank-you message.
+print(f"{name}, thank you for visiting! 🙏")

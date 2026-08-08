@@ -1,10 +1,17 @@
-#  Wrote a program to calculate compound interest.
+# Calculate the compound interest on a loan.
 
-P = float(input("ENTER PRINCIPAL AMMOUNT OF YOUR LOAN: "))
-R = float(input("ENTER INTEREST RATE OF YOUR LOAN: "))
-T = float(input("ENTER TIME OF YOUR LOAN: "))
-N = float(input("ENTER YEARLY INTEREST RATE ADD IN YOU LOAN: "))
+# Take the principal amount, interest rate, time, and compounding frequency as input.
+principal = float(input("Enter the principal amount of your loan: "))
+rate = float(input("Enter the annual interest rate (%): "))
+time = float(input("Enter the loan duration (years): "))
+frequency = float(input("Enter the number of times interest is compounded per year: "))
 
-C_I = P * (1 + (R / 100 * N)) ** (N * T)
+# Calculate the final amount using the compound interest formula.
+amount = principal * (1 + (rate / 100) / frequency) ** (frequency * time)
 
-print(C_I)
+# Calculate the compound interest earned.
+compound_interest = amount - principal
+
+# Display the compound interest and final amount.
+print(f"Compound interest: {compound_interest:.2f}")
+print(f"Total amount: {amount:.2f}")

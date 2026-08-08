@@ -1,15 +1,17 @@
-#  Determine the age category: Child, Teenager, Adult, Senior Citizen.
+# Determine the age category: Child, Teenager, Adult, or Senior Citizen.
 
-age = int(input("ENTER YOU AGE: "))
+# Take the user's age as input.
+age = int(input("Enter your age: "))
 
-# logic for age criteria 
+# Determine the age category based on the given age.
+if age < 8:
+    print("You are a child.")
 
-if age <= 8:
-    print('YOU ARE "CHILDREN"')
-elif age >=8 and age <= 21:
-    print('"YOU ARE "TEENAGER"')
-elif age >= 21 and age <= 60:
-    print('YOU ARE "ADULT"')
+elif age <= 21:
+    print("You are a teenager.")
+
+elif age <= 60:
+    print("You are an adult.")
 
 else:
-    print('YOU ARE SENIOU "CETZEN"')
+    print("You are a senior citizen.")

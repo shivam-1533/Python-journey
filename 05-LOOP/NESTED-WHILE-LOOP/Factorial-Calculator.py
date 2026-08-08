@@ -1,16 +1,14 @@
-num = int(input("Enter your num for find factorial : "))
+# Calculate the factorial of a number using a for loop.
 
-fact, i = 1, 1
+# Take the number as input from the user.
+num = int(input("Enter a number to find its factorial: "))
 
-# while i <= num :
-#     fact = fact * i
-#     i += 1
+# Initialize the factorial value.
+fact = 1
 
-#     print(num,"*",i,"=",fact,"\n")
+# Multiply each number from 1 to the given number.
+for i in range(1, num + 1):
+    fact *= i
 
-
-for i in range (1, num+1):
-    fact = fact * i
-
-    print(num, "*", i, "=", fact, "\n")
-
+# Display the factorial result.
+print(f"{num}! = {fact}")

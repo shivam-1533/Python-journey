@@ -1,23 +1,15 @@
-# Get the characters from position 2 to position 5 (not included):
-# The first character has index 0.
+# Demonstrate different string slicing techniques.
 
-b = "Hello, World!"
-print(b[2:5])
+text = "Hello, World!"
 
-# By leaving out the start index, the range will start at the first character:
-# Get the characters from the start to position 5 (not included):
+# Get characters from index 2 to index 4.
+print(text[2:5])
 
-b = "Hello, World!"
-print(b[:5])
+# Get characters from the beginning to index 4.
+print(text[:5])
 
+# Get characters from index 2 to the end.
+print(text[2:])
 
-# Slice To the End
-
-b = "Hello, World!"
-print(b[2:])
-
-
-# Negative Indexing
-
-b = "Hello, World!"
-print(b[-5:-2])
+# Get characters using negative indexing.
+print(text[-5:-2])

@@ -1,8 +1,11 @@
-#   Wrote a program to calculate the area of ​​a triangle.
+# Calculate the area of a triangle.
 
-base = float(input("Enter the base length of triangle: "))
-hight = float(input("Enter the hight of triangle: "))
+# Take the base and height as input from the user.
+base = float(input("Enter the base length of the triangle: "))
+height = float(input("Enter the height of the triangle: "))
 
-area = (base * hight) / 2
+# Calculate the area of the triangle.
+area = (base * height) / 2
 
-print(f"Area of the Triangle is: {area}")
+# Display the calculated area.
+print(f"Area of the triangle is: {area}")

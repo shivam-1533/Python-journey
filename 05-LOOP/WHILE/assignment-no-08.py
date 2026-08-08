@@ -1,12 +1,13 @@
-# Find the sum of all odd numbers between 1 to n
+# Find the sum of all odd numbers between 1 and n
 
 n = int(input("Enter a number: "))
 
 i = 1
-sum = 0
+total = 0
 
+# Add all odd numbers from 1 to n.
 while i <= n:
-    sum = sum + i
-    i = i + 2
+    total += i
+    i += 2
 
-print("Sum =", sum)
+print("Sum =", total)

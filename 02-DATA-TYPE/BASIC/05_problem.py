@@ -1,22 +1,11 @@
+# Calculate the average of two numbers entered by the user.
 
-#  Write a python program to find an average of two numbers and take input by user. 
+# Take two numbers as input from the user.
+num1 = float(input("Enter the first number: "))
+num2 = float(input("Enter the second number: "))
 
-# Program to calculate the average of two numbers
-
-# Taking input from the user
-num1 = float(input("Enter first number: "))
-num2 = float(input("Enter second number: "))
-
-# Calculating the average
+# Calculate the average of the two numbers.
 average = (num1 + num2) / 2
 
-# Displaying the result
+# Display the calculated average.
 print("The average of the two numbers is:", average)
-
-
-'''a=int(input("Entere a number : ")) # my self made program
-
-b=int(input("Entere a number : "))
-
-print((a+b)/2)
-'''

@@ -1,44 +1,51 @@
-#  WAP TO CALCULATE CURRENCY NUMBER IN YOU AMMOUNT .
+# Calculate the number of currency notes required for a given amount.
 
-first_name = input("Enter your First Name: ").strip()
-last_name = input("Enter your Last Name: ").strip()
+# Take the user's first and last name as input.
+first_name = input("Enter your first name: ").strip()
+last_name = input("Enter your last name: ").strip()
 
-#  cheak if the input is not charector the whole program breaked and ended up if input is a str then good to go.
-
+# Validate that both names contain letters only.
 if not (first_name.isalpha() and last_name.isalpha()):
-    print("\n[ERROR] Invalid input! Names must contain letters only (no numbers or symbols). Program stopping.")
+    print(
+        "\n[ERROR] Invalid input! Names must contain letters only "
+        "(no numbers or symbols). Program stopped."
+    )
     exit()
 
+# Take the total amount as input.
 amount = int(input("Enter the total amount: "))
 
-# note2000 = amount // 2000 # commented becouse 2000 currency is retired 
-# amount = amount % 2000
+# Calculate the number of ₹500 notes.
+note_500 = amount // 500
+amount %= 500
 
-note500 = amount // 500
-amount = amount % 500
+# Calculate the number of ₹100 notes.
+note_100 = amount // 100
+amount %= 100
 
-note100 = amount // 100
-amount = amount % 100
+# Calculate the number of ₹50 notes.
+note_50 = amount // 50
+amount %= 50
 
-note50 = amount // 50
-amount = amount % 50
+# Calculate the number of ₹20 notes.
+note_20 = amount // 20
+amount %= 20
 
-note20 = amount // 20
-amount = amount % 20
+# Calculate the number of ₹10 notes.
+note_10 = amount // 10
+amount %= 10
 
-note10 = amount // 10
-amount = amount % 10
-
+# Display the currency note breakdown.
 print("\n--- Currency Notes Breakdown ---")
-# print("2000 Notes :", note2000)
-print("500 Notes  :", note500)
-print("100 Notes  :", note100)
-print("50 Notes   :", note50)
-print("20 Notes   :", note20)
-print("10 Notes   :", note10)
+print("₹500 Notes :", note_500)
+print("₹100 Notes :", note_100)
+print("₹50 Notes  :", note_50)
+print("₹20 Notes  :", note_20)
+print("₹10 Notes  :", note_10)
 
-# Agar 10 se kam (1, 2, 5 rs) bach jaye toh
+# Display any remaining amount below ₹10.
 if amount > 0:
     print("Remaining Balance :", amount)
 
-print("Thank You🙏", first_name,last_name)
+# Display a thank-you message.
+print(f"\nThank you, {first_name} {last_name}! 🙏")

@@ -1,13 +1,16 @@
-#  to take user input for his password 
+# Create a password verification system.
 
-password = 'shivam1234'
+# Set the correct password.
+correct_password = "shivam1234"
 
+# Keep asking for the password until it is correct.
 while True:
-    passw = input("Enter your password e.g(a-z+0-9) : ")
+    password = input("Enter your password (a-z + 0-9): ")
 
-    if passw == password:
-        print("\n<------ Loging Success-full ------->\n")
-
+    # Check whether the entered password is correct.
+    if password == correct_password:
+        print("\n<------ Login Successful ------->\n")
         break
+
     else:
         print("\n<------ Try Again ------->\n")

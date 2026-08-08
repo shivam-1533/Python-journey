@@ -1,27 +1,25 @@
-# WAP a Porogram to compair between two number
+# Compare two numbers using the comparison operator.
 
-a=input("Enter a number : ")
+a = float(input("Enter the first number: "))
+b = float(input("Enter the second number: "))
 
-b=input("Enter a number : ")
+print(a, "is greater than", b, ":", a > b)
 
-print(a,"Is grater then",b , a>b)
-
-print("\n\n <================ THIS PROGRAM IS FINISHED================>\n\n")
+print("\n<================ PROGRAM FINISHED ================>\n")
 
 
-# We can make this program with if else statement
+# Compare two numbers using if-elif-else statements.
 
-num_1 = float(input("Enter Your First Number : "))
-
-num_2 = float(input("\nEnter Your Second Number : "))
+num_1 = float(input("Enter your first number: "))
+num_2 = float(input("\nEnter your second number: "))
 
 print("\n<================== RESULT ==================>\n")
 
 if num_1 > num_2:
-    print(f"\n\n{num_1} Is Max Number\n")
+    print(f"{num_1} is the greater number.")
 
 elif num_1 == num_2:
-    print(f"\n{num_1} And {num_2} Is Equal\n")
+    print(f"{num_1} and {num_2} are equal.")
 
 else:
-    print(f"{num_2} Is Max Number ")
+    print(f"{num_2} is the greater number.")

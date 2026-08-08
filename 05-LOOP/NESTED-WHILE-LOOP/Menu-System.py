@@ -1,17 +1,33 @@
-opt_1 = "play"
-opt_2 = "settings"
+# Create a simple game menu using a while loop.
 
-print("\n To Exit The Game Enter Num- 3\n")
+# Define the available menu options.
+option_1 = "Play"
+option_2 = "Settings"
 
+print("\nTo exit the game, enter option 3.")
+
+# Keep displaying the menu until the user chooses to exit.
 while True:
-    opt = int(input("\nYour Option Is -->\n\n1- Play\n2-Settings\n3-Exit\nEnter Your Option : "))
+    option = int(
+        input(
+            "\nYour Options Are:\n\n"
+            "1 - Play\n"
+            "2 - Settings\n"
+            "3 - Exit\n"
+            "Enter Your Option: "
+        )
+    )
 
-    if opt == 1:
-        print("\nYou Have Entered option for- ", opt_1, "\n")
+    # Handle the selected menu option.
+    if option == 1:
+        print(f"\nYou selected: {option_1}\n")
 
-    elif opt == 2:
-        print("\nYou Have Entered option for- ",opt_2,"\n")
+    elif option == 2:
+        print(f"\nYou selected: {option_2}\n")
 
-    elif opt == 3:
-        print("\n<-----THIS GAME IS OVER ----->\n")
-        exit()
+    elif option == 3:
+        print("\n<----- GAME OVER ----->\n")
+        break
+
+    else:
+        print("\nInvalid option. Please choose 1, 2, or 3.\n")
